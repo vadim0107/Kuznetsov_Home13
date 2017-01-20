@@ -1,0 +1,82 @@
+.header-find {
+    margin-top: 90px;
+    text-align: center;
+    input[type=text] {
+        width: 740px;
+        padding: 22px 0 20px 30px;
+        border-radius: 5px;
+        border: none;
+    }
+    input[type=submit] {
+        padding: 22px 41px 20px 48px;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        color: #ffffff;
+        background-color: $main-color;
+        margin-left: -190px;
+    }
+}
+
+.footer-subscribe {
+    margin-top: 25px;
+    input[type=email] {
+        width: 277px;
+        padding: 13px 0 13px 22px;
+        border-radius: 5px;
+        border: none;
+    }
+    input[type=submit] {
+        padding: 13px 33px 13px 37px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+        margin-left: -30px;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        color: #ffffff;
+        background-color: $main-color;
+        &:hover {
+            background-color: #ffffff;
+            color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 795px) {
+    .header-find {
+        margin-top: 40px;
+        input[type=text] {
+            width: 500px;
+            padding-left: 5px;
+        }
+
+    }
+}
+
+@media (max-width: 530px) {
+    .header-find {
+        input[type=text] {
+            width: 300px;
+            padding: 15px 0
+        }
+        input[type=submit] {
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 150px;
+            margin-left: 0;
+            padding: 15px 0 15px 5px;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .footer-subscribe {
+        text-align: center;
+        input[type=submit] {
+            margin-left: 0;
+            border-radius: 5px;
+            margin-top: 10px;
+
+        }
+    }
+}

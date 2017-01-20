@@ -1,0 +1,315 @@
+.destination {
+    padding-top: 1px;
+    padding-bottom: 80px;
+    ul.numbers {
+        margin-top: -70px;
+        background-color: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+        padding: 40px 0;
+        box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+        border-radius: 5px;
+        li {
+            width: 25%;
+            border-right: 1px solid #717171;
+            text-align: center;
+            .quantity-text {
+                margin-top: 15px;
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    h3 {
+        margin-top: 95px;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .head-info {
+        margin-top: 25px;
+        text-align: center;
+    }
+    ul.destination-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        margin-top: 60px;
+        li {
+            width: 33%;
+            margin-top: 25px;
+            position: relative;
+            min-width: 300px;
+            .destination-img {
+                img {
+                    max-width: 100%;
+                }
+            }
+            .destination-boats {
+                position: absolute;
+                top: 30px;
+                left: 27px;
+                background-color: $main-color;
+                display: inline-block;
+                padding: 12px;
+                border-radius: 5px;
+                img {
+                    margin-right: 10px;
+                }
+            }
+            .destination-city {
+                position: absolute;
+                bottom: 25px;
+                left: 27px;
+                span {
+                    margin-top: 10px;
+                    display: block;
+                }
+            }
+        }
+        li:first-child {
+            min-width: 66%;
+        }
+    }
+    .destinations-link {
+        text-align: center;
+        margin-top: 95px;
+        a {
+            display: inline-block;
+            margin: 0 auto;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #343434;
+            font-weight: 700;
+            padding: 24px 40px;
+            border-radius: 5px;
+            border: 1px solid rgba(38, 38, 38, 0.3);
+            &:hover {
+                background-color: $main-color;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.own-boat {
+    background: url("../images/own-boat-bg.png") center;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 150px;
+    .own-boat-question {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    .own-boat-link {
+        margin-top: 85px;
+        text-align: center;
+        a {
+            display: inline-block;
+            padding: 21px 36px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #ffffff;
+            border-radius: 5px;
+            background-color: $main-color;
+            &:hover {
+                background-color: #ffffff;
+                color: $main-color;
+
+            }
+        }
+    }
+}
+
+.recently-added {
+    padding-top: 100px;
+    padding-bottom: 85px;
+    h3 {
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .head-info {
+        text-align: center;
+        margin-top: 25px;
+    }
+    ul.boat-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin-top: 90px;
+        li {
+            box-sizing: border-box;
+            position: relative;
+            width: 50%;
+            margin: 15px 0;
+            padding: 0 5px;
+            min-width: 300px;
+            .boat-list-img {
+                a {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .boat-list-price {
+                display: inline-block;
+                border-radius: 5px;
+                background-color: $main-color;
+                padding: 12px 10px;
+                position: absolute;
+                top: 30px;
+                left: 25px;
+            }
+            .boat-list-info {
+                position: absolute;
+                left: 25px;
+                bottom: 25px;
+                .boat-list-descr {
+                    margin-top: 15px;
+                    a {
+                        color: #ffffff;
+                        text-decoration: none;
+                        margin-right: 30px;
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recently-link {
+        text-align: center;
+        margin-top: 80px;
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px 42px;
+            border-radius: 5px;
+            border: 1px solid rgba(38, 38, 38, 0.3);
+            color: #343434;
+            font-weight: 700;
+            &:hover {
+                background-color: $main-color;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .destination {
+        padding-bottom: 30px;
+        ul.numbers {
+            padding: 10px 0;
+            margin-top: -36px;
+            li {
+                .quantity {
+                    font-size: 20px;
+                }
+                .quantity-text {
+                    font-size: 12px;
+                }
+            }
+        }
+        h3 {
+            margin-top: 30px;
+        }
+        ul.destination-list {
+            margin-top: 30px;
+            li {
+                .destination-boats {
+                    top: 10px;
+                    left: 10px;
+                    padding: 6px;
+                }
+                .destination-city {
+                    bottom: 20px;
+                    left: 10px;
+                    font-size: 24px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+            li:first-child {
+                width: 100%;
+            }
+        }
+        .destinations-link {
+            margin-top: 30px;
+            a {
+                padding: 12px 20px;
+            }
+        }
+    }
+
+    .own-boat {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        .own-boat-question {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .own-boat-link {
+            margin-top: 50px;
+            a {
+                padding: 12px 20px;
+            }
+        }
+    }
+
+    .recently-added {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        ul.boat-list {
+            margin-top: 30px;
+            li {
+                .boat-list-price {
+                    top: 10px;
+                    left: 10px;
+                    padding: 6px;
+                }
+                .boat-list-info {
+                    left: 10px;
+                    bottom: 15px;
+                    .boat-list-name {
+                        font-size: 24px;
+                    }
+                    .boat-list-descr {
+                        margin-top: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .recently-link {
+            margin-top: 30px;
+            a {
+                padding: 12px 20px;
+            }
+        }
+    }
+}

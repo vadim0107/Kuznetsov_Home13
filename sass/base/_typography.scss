@@ -1,0 +1,54 @@
+h1, nav, h3, ul.destination-list, .destinations-link, .own-boat-question, .own-boat-link, .boat-list-name,
+.recently-link, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2, ul.numbers, .head-info, .destination-boats, .boat-list-price, .boat-list-descr, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, .own-boat-question {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+h2, h3, .boat-list-name {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+ul.nav-right li a {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.quantity {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.quantity-text {
+    font-size: 18px;
+}
+
+.destination-boats, .boat-list-price {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.destination-city {
+    font-size: 30px;
+    span {
+        font-size: 20px;
+    }
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer {
+    font-size: 14px;
+    font-weight: 400;
+}
